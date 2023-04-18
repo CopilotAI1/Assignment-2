@@ -1,13 +1,6 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    margin: 0 auto;
-    width: 700px;
-    border: 3px solid cornflowerblue;
-    padding: 0 2em 1em;
-}
+
 h1 {
-    color: cornflowerblue;
+    color: burlywood;
 }
 div {
     margin-bottom: .5em;
@@ -57,7 +50,7 @@ button {
 
 
 h2 {
-    color: cornflowerblue;
+    color: rgb(133, 172, 42);
     text-align: center;
 }
 
@@ -96,4 +89,122 @@ p {
 
   .hidden{
     display: none;
+  }
+
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 800px;
+    border: 3px solid #228a22;
+    padding: 0 2em 1em;
+    border-radius: 8px;
+}
+
+#profile {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#dashboard {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+
+
+.date {
+    font-size: 1.5em;
+    color: burlywood;
+}
+
+.time{
+    font-size: 1em;
+    margin-top: 12px;
+}
+
+.inputs{
+    text-align: left;
+    color: rgb(150, 212, 79);
+    padding: auto;
+}
+
+.logo {
+    text-align: center;
+    color: burlywood;
+    text-decoration: underline overline #0093b8 ;
+}
+
+.hint{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+.reset{
+    text-align: right;
+}
+span {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #abb160;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .holder {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
   }

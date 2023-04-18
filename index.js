@@ -7,7 +7,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-const PORT = 5000;
+const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log("App listening on port ", PORT);
@@ -36,4 +36,12 @@ app.get("/terms", (req, res) => {
 
 app.get("/slides", (req, res) => {
   res.sendFile(path.resolve(__dirname + "/views/", "slide-show.html"));
+});
+
+app.get("/about-us", (req, res) => {
+  res.sendFile(path.resolve(__dirname + "/views/", "about-us.html"));
+});
+
+app.get("/contact-us", (req, res) => {
+  res.sendFile(path.resolve(__dirname + "/views/", "contact-us.html"));
 });
