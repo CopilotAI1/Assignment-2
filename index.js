@@ -7,7 +7,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-const PORT = 3000;
+const PORT = 3002;
 
 app.listen(PORT, () => {
   console.log("App listening on port ", PORT);
@@ -19,11 +19,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  res.sendFile(path.resolve(__dirname + "/views/", "profile.html"));
+  //res.sendFile(path.resolve(__dirname + "/views/", "profile.html"));
+  res.render("profile");
 });
 
 app.get("/math", (req, res) => {
-  res.sendFile(path.resolve(__dirname + "/views/", "math.html"));
+  //res.sendFile(path.resolve(__dirname + "/views/", "math.html"));
+  res.render("math");
 });
 
 app.get("/faq", (req, res) => {
@@ -34,14 +36,16 @@ app.get("/terms", (req, res) => {
   res.sendFile(path.resolve(__dirname + "/views/", "terms.html"));
 });
 
-app.get("/slides", (req, res) => {
+app.get("/slide", (req, res) => {
   res.sendFile(path.resolve(__dirname + "/views/", "slide-show.html"));
 });
 
 app.get("/about-us", (req, res) => {
-  res.sendFile(path.resolve(__dirname + "/views/", "about-us.html"));
+  //res.sendFile(path.resolve(__dirname + "/views/", "about-us.html"));
+  res.render("about-us");
 });
 
 app.get("/contact-us", (req, res) => {
-  res.sendFile(path.resolve(__dirname + "/views/", "contact-us.html"));
+  //res.sendFile(path.resolve(__dirname + "/views/", "contact-us.html"));
+  res.render("contact-us");
 });

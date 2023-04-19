@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Slide Show</title>
+</head>
+<body>
+    <main>
+        <h1>Cool Cars to Enjoy</h1>
+        <div class="carousel">
+        <button class = "carousel_button carousel button right">
+            <img src="images/double-arrow-right-icon.webp">
+        </button>
+        <ul class="carousel_container" id="image_list">
+            <li><a href="images/01b-michael-furman-1962-ferrari-250-gto.jpg" title="Fast Boi" class= "Carousel_image"></a></li>
+            <li><a href="images/2022-ASTON-MARTIN-DB11-1024x612.jpg" title="The Only Car That Matters" class= "Carousel_image"></a></li>
+            <li><a href="images/2023-porsche-911-t-021-dsc04152-1669058415.jpg" title="Vroom" class= "Carousel_image"></a></li>
+            <li><a href="images/83934_Front_3-4_Web.jpg" title="Just Why?" class= "Carousel_image"></a></li>
+        </ul>
+    
+        <p><img id="main_image" src="images/01b-michael-furman-1962-ferrari-250-gto.jpg" alt="Fast Boi"></p>
+        <h2 id="caption">All hail the cool cars</h2>  
+        <button class = "carousel_button carousel button left">
+            <img src="images/download.png">
+        </button>
+    </div>
+    <div class="carousel_nav">
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+    </div>
+        <%- include ('layouts/footer') -%>
+
+        <script src="js/slide-show.js"></script>
+    </main>  
+</body>
+</html>

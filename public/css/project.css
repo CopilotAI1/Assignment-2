@@ -1,4 +1,4 @@
-
+/*Imported code and changed features in this code to match previous project's*/
 h1 {
     color: burlywood;
 }
@@ -67,7 +67,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: burlywood;
 }
   
   .menu-li {
@@ -84,13 +84,25 @@ p {
   
   /* Change the link color to #111 (black) on hover */
   .menu-li a:hover {
-    background-color: cornflowerblue;
+    background-color: #228a22;
   }
 
   .hidden{
     display: none;
   }
+  /* Recretead header box*/
+  .footer-ul{
+    text-align: center;
+    list-style-type: lower-greek;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: burlywood;
 
+
+
+
+  }
   body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
@@ -99,6 +111,19 @@ p {
     border: 3px solid #228a22;
     padding: 0 2em 1em;
     border-radius: 8px;
+}
+
+/* to make contact page look relatively nice*/
+#dec1 {
+  text-align: left;
+}
+
+#dec2 {
+  text-align: center;
+}
+
+#dec3 {
+  text-align: right;
 }
 
 #profile {
@@ -208,3 +233,21 @@ input {
     left: -35px;
     content: "&#10006;";
   }
+/* Attempt to create a working carousel not knowing mine wasn't working until last minute
+  .carousel {
+position: relative;
+height: 600px;
+width: 80%;
+margin: 0% auto;
+ }
+
+ .Carousel_image {
+  width: 100%;
+ }
+
+ .carousel_container {
+  margin: 0;
+  padding: 0;
+
+ }
+ */
