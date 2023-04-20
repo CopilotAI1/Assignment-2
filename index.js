@@ -37,7 +37,8 @@ app.get("/terms", (req, res) => {
 });
 
 app.get("/slide", (req, res) => {
-  res.sendFile(path.resolve(__dirname + "/views/", "slide-show.html"));
+  //res.sendFile(path.resolve(__dirname + "/views/", "slide-show.html"));
+  res.render("slide")
 });
 
 app.get("/about-us", (req, res) => {
